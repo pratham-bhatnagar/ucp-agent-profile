@@ -1,0 +1,47 @@
+{
+ "ucp": {
+  "version": "2026-08-25",
+  "services": {},
+  "capabilities": {
+   "dev.ucp.shopping.cart": [
+    {
+     "version": "2026-08-25"
+    }
+   ],
+   "dev.ucp.shopping.catalog.search": [
+    {
+     "version": "2026-08-25"
+    }
+   ],
+   "dev.ucp.shopping.catalog.lookup": [
+    {
+     "version": "2026-08-25"
+    }
+   ]
+  },
+  "payment_handlers": {
+   "dev.shopify.card": [
+    {
+     "id": "shopify.card",
+     "version": "2026-01-15",
+     "spec": "https://ucp.dev/specification/payment-handler-guide",
+     "schema": "https://shopify.dev/ucp/card-payment-handler/2026-01-15/config.json",
+     "config": {
+      "payment_methods": [
+       {
+        "type": "card",
+        "enabled_card_brands": [
+         "visa",
+         "master"
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "name": "Machine Commerce research agent",
+ "description": "Research agent from the Machine Commerce lab. Reads catalogs and builds carts on live stores; never completes a checkout or submits a payment.",
+ "contact": "prathamonchain@gmail.com"
+}
